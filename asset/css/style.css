@@ -1,0 +1,31 @@
+body{
+    background-color: #010610;
+    display: flex;
+    justify-content: center;
+}
+#logoText{
+    color: #F24E1E;
+}
+#textP{
+    font-family: "inter",sans-serif;
+}
+#btnLogin{
+   background-color: #F24E1E; 
+   color: white;
+   font-family: "inter",sans-serif;
+}
+#btnSignup{
+   background-color: white; 
+   color: black;
+   font-family: "inter",sans-serif;
+}
+#coupon{
+     background-color: #F24E1E;
+     color: white; 
+}
+#pancakes{
+    background-image: url(/asset/img/rice.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

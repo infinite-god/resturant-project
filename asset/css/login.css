@@ -1,0 +1,18 @@
+body{
+    background-color: #010610;
+    display: flex;
+    justify-content: center;
+}
+#emailInput:focus{
+     background-color: #010610;
+     color: white;
+}
+#passwordInput:focus{
+     background-color: #010610;
+     color: white;
+}
+#loginBtn{
+      background-color: #F24E1E; 
+   color: white;
+   font-family: "inter",sans-serif;
+}

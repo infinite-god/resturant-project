@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/asset/css/signup.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="items-center flex justify-center flex-col text-white p-5">
+        <div
+            class="w-25 h-25 md:w-30 md:h-30 lg:w-30 lg:h-30 rounded-full bg-white flex justify-center items-center mt-15">
+            <span class="text-black font-semibold font-bold text-base lg:text-xl" id="logoText">Foodie Logo</span>
+        </div>
+        <h2 class=" text-white font-bold mt-4 text-2xl">Create an account</h2>
+        <div class="mt-3 flex flex-col justify-center">
+            <input type="text" class="w-90 h-10 bg-white rounded-lg mt-1 text-black pl-4" id="emailInput"
+                placeholder="Enter Your Username">
+        </div>
+        <div class="mt-3 flex flex-col justify-center">
+            <input type="email" class="w-90 h-10 bg-white rounded-lg mt-1 text-black pl-4" id="emailInput"
+                placeholder="Enter Your Email">
+        </div>
+        <div class="mt-3 flex flex-col justify-center">
+            <input type="text" class="w-90 h-10 bg-white rounded-lg mt-1 text-black pl-4" id="emailInput"
+                placeholder="Enter Your Phone Number">
+        </div>
+        <div class="mt-3 flex flex-col justify-center">
+            <input type="password" class="w-90 h-10 bg-white rounded-lg mt-1 text-black pl-4" id="passwordInput"
+                placeholder="Enter Your Password">
+        </div>
+        <button class="rounded-lg text-white w-90 bg-black h-10 mt-4 font-bold text-lg" id="signupBtn">Sign Up</button>
+        <div class="flex items-center justify-center text-white my-6 mt-12">
+            <div class="flex-grow w-23 border-t border-white"></div>
+            <span class="mx-4 text-gray-500 text-lg">or continue with</span>
+            <div class="flex-grow w-23 border-t border-gray-300"></div>
+        </div>
+        <div class="flex justify-center items-center  border-gray-300 w-90 bg-white h-10 rounded-lg ">
+            <img src="/asset/img/Google.png" class="w-7 h-auto object-contain relative right-15" alt="">
+            <a href="https://accounts.google.com/v3/signin/accountchooser?continue=https%3A%2F%2Faccounts.google.com%2F&dsh=S403240248%3A1759857164795591&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=AfYwgwWNfEDthTyTfXp_XXJwtYZb8-AmlMVetUuTsnD7wFCvXQpqm1NZVoLqUrM1wFLOCuL3kH6yYw&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="text-gray-500  text-lg">Login with Google</a>
+        </div>
+        <nav class="mt-4">
+        <p>Don't have an account ? <a href="/login.html" class="text-blue-400 ">Login</a></p>
+        </nav>
+    </section>
+    <script src="/asset/js/signup.js"></script>
+</body>
+
+</html>
