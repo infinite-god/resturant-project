@@ -19,3 +19,5 @@ document.addEventListener('click', (e) => {
     asideDashboard.classList.add('-translate-x-full');
   }
 });
+const searchBtn = document.getElementById('searchBtn')
+const searchInput = document.getElementById('searchInput')

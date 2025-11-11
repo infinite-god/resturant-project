@@ -8,9 +8,9 @@ body{
     
 }
 #sectionImg{
-    background-image: url(/asset/img/egusi.jpg);
+    background-image: url(/asset/img/buterdd.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     
 }
