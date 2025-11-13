@@ -13,41 +13,17 @@ body{
    color: white;
    font-family: "inter",sans-serif;
 }
-#food-and-drink-box{
-    background-color: #010610;
-}
-#food{
+
+#Egusi{
     background-image: url(/asset/img/egusi.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-#foods{
-    background-image: url(/asset/img/rice1.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+
+#tagPrice{
+   color: #F24E1E;
 }
-#foodss{
-    background-image: url(/asset/img/Jumbo-Chicken.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#foodsss{
-    background-image: url(/asset/img/chicken-&-chips.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#Drink1{
-    background-image: url(/asset/img/Coca-cola.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#Drink2{
-    background-image: url(/asset/img/Pepsi.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#textBox{
-           background-color: #F24E1E; 
-   color: white;
-   font-family: "inter",sans-serif; 
+#symbolBox{
+    background-color: #F24E1E;
 }
