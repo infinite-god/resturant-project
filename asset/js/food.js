@@ -1,3 +1,5 @@
+"use strict"
+
 // Sidebar toggle script
 const menuBtn = document.getElementById('menuBtn');
 const asideDashboard = document.getElementById('asideDashboard');
@@ -43,39 +45,58 @@ setupCounter("decreaseBtn2", "increaseBtn2", "display2");
 // card 3
 setupCounter("decreaseBtn3", "increaseBtn3", "display3");
 
-
-
-
-
-
-
-
-
-
-
-// let count = 0;
-// document.getElementById("decreaseBtn").onclick = function(){
-//   if (count > 0) {
-//      count-=1;
-//   }
+document.addEventListener('DOMContentLoaded', function(){
+  let modal = document.getElementById('simpleModal');
+let modalBtn = document.getElementById ('modalBtn');
+let closeBtn = document.getElementsByClassName ('closeBtn')[0];
+modalBtn.addEventListener('click', function(){
+  modal.style.display = 'block';
+});
+closeBtn.addEventListener('click', function(){
+  modal.style.display = 'none';
+});
+window.addEventListener('click', function(e){
+  if(e.target === modal){
+    modal.style.display = 'none';
+  };
+});
+});
+// add to cart modal//
+document.addEventListener('DOMContentLoaded', function(){
+  let modalCartss = document.getElementById('simpleModalCart');
+  let addTocart = document.getElementById('addToCart');
+  let closeCart = document.getElementsByClassName('closeCart')[0];
+  addTocart.addEventListener('click', function(){
+    modalCartss.style.display = 'block';
+  });
+  closeCart.addEventListener('click', function(){
+    modalCartss.style.display = 'none';
+  });
+  window.addEventListener('click', function(e){
+    if(e.target === modalCartss){
+      modalCartss.style.display = 'none';
+    }
+  });
+});
  
-//   document.getElementById("display").value = count;
-// }
-// document.getElementById("increaseBtn").onclick = function(){
-//   count+=1;
-//   document.getElementById("display").value = count;
-// };
-// let counts = 0;
-// document.getElementById("decreaseBtn2").onclick = function(){
-//   if (counts > 0) {
-//      counts-=1;
-//   }
- 
-//   document.getElementById("display2").value = count;
-// }
-// document.getElementById("increaseBtn2").onclick = function(){
-//   counts+=1;
-//   document.getElementById("display2").value = counts;
-// }
+document.addEventListener('DOMContentLoaded', function(){
+ let viewCart = document.getElementsByClassName('viewCart');
+ viewCart.addEventListener('click', function(){
+  window.location.href = "cart.html"
+ })
+})
+
+document.getElementsByTagNameNS
+
+
+
+
+
+
+
+
+
+
+
 
 

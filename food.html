@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/asset/css/food.css">
   <link rel="stylesheet"
     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="icon" type="image/png" href="/asset/img/ogbono.jpeg">
   <title>Food</title>
 </head>
 
@@ -22,8 +23,8 @@
       <ul class="sideBar">
         <li class="text-xl cursor-pointer"><a href="dashboard.html" class="hover:text-black hover:bg-gray-300"><i
               class="las la-home text-xl"></i> <span>Home</span></a></li>
-        <li class="text-xl pt-5 cursor-pointer"> <a href="food.html" class="hover:text-black hover:bg-gray-300"><i
-              class="las la-store text-xl"></i> <span>Restaurants</span></a></li>
+        <li class="text-xl pt-5 cursor-pointer"> <a href="tablereservation.html" class="hover:text-black hover:bg-gray-300"><i
+              class="las la-store text-xl"></i> <span>Reservation</span></a></li>
         <li class="text-xl pt-5 cursor-pointer"> <a href="food.html" class="hover:text-black hover:bg-gray-300"><i
               class="las la-hamburger text-xl"></i> <span>Food</span></a></li>
         <li class="text-xl pt-5 cursor-pointer"><a href="food.html" class="hover:text-black hover:bg-gray-300"><i
@@ -54,54 +55,90 @@
       <li class="w-8 h-8 rounded-full bg-black lg:w-12 lg:h-12"></li>
     </ul>
   </div>
-<div class="w-full flex justify-start pl-4">
-  <span class="text-4xl text-white font-bold mt-3">Order details</span>
-</div>
-<aside class="grid lg:grid-cols-3 md:grid-cols-2 gap-x-3 gap-y-4 p-2 pt-10 lg:pt-5">
-  <div class="w-100 h-35 bg-white rounded-lg items-center p-2 justify-between flex flex-row">
-    <aside class="w-25 h-27 rounded-lg bg-red-300"id="Egusi"></aside>
-    <aside class="flex flex-col gap-y-2">
-      <span class="text-xl font-semibold" >Egusi soup</span>
-      <span>See details</span>
-      <span class="text-3xl font-bold" id="tagPrice">$4.99</span>
-    </aside>
-    <aside class="flex flex-row gap-4">
-        <button class="w-10 h-10 bg-red-500 flex text-center justify-center text-black text-3xl rounded-lg font-bold" id="decreaseBtn">-</button>
-         <input id="display" class="text-black text-2xl w-10 h-10 border border-red-400 text-center" value="0" readonly>
-        <button  class="w-10 h-10 bg-red-500 flex text-center justify-center text-black text-3xl rounded-lg font-bold" id="increaseBtn">+</button>
-    </aside>
+  <div class="w-full flex justify-start pl-4">
+    <span class="text-4xl text-white font-bold mt-3">Order details</span>
   </div>
-  <div class="w-100 h-35 bg-white rounded-lg items-center p-2 justify-between flex flex-row">
-    <aside class="w-25 h-27 rounded-lg bg-red-300"id="Egusi"></aside>
-    <aside class="flex flex-col gap-y-2">
-      <span class="text-xl font-semibold" >Egusi soup</span>
-      <span>See details</span>
-      <span class="text-3xl font-bold" id="tagPrice">$4.99</span>
-    </aside>
-    <aside class="flex flex-row gap-4">
-        <button class="w-10 h-10 bg-red-500 flex text-center justify-center text-black text-3xl rounded-lg font-bold" id="decreaseBtn2">-</button>
-         <input id="display2" class="text-black text-2xl w-10 h-10 border border-red-400 text-center" value="0" readonly>
-        <button  class="w-10 h-10 bg-red-500 flex text-center justify-center text-black text-3xl rounded-lg font-bold" id="increaseBtn2">+</button>
-    </aside>
+  <aside class="grid lg:grid-cols-3 md:grid-cols-2 gap-x-3 gap-y-4 p-2 pt-10 lg:pt-5">
+    <div class="w-100 h-35 bg-white rounded-lg items-center p-2 justify-between flex flex-row">
+      <aside class="w-25 h-27 rounded-lg bg-red-300" id="Egusi"></aside>
+      <aside class="flex flex-col gap-y-2">
+        <span class="text-xl font-semibold">Egusi soup</span>
+        <span>See details</span>
+        <span class="text-3xl font-bold" id="tagPrice">$4.99</span>
+      </aside>
+      <div class="flex flex-col justify-center items-center gap-y-5">
+      <aside class="flex flex-row gap-4">
+        <button class="w-10 h-10 bg-[#F24E1E] flex text-center justify-center text-black text-3xl rounded-lg font-bold"
+          id="decreaseBtn">-</button>
+        <input id="display" class="text-black text-2xl w-10 h-10 border border-red-400 text-center" value="0" readonly>
+        <button class="w-10 h-10 bg-[#F24E1E] flex text-center justify-center text-black text-3xl rounded-lg font-bold"
+          id="increaseBtn">+</button>
+      </aside>
+      <button class="buttonCart" id="addToCart">Add to cart</button>
+      </div>
+    </div>
+    <div class="w-100 h-35 bg-white rounded-lg items-center p-2 justify-between flex flex-row">
+      <aside class="w-25 h-27 rounded-lg bg-red-300" id="Egusi"></aside>
+      <aside class="flex flex-col gap-y-2">
+        <span class="text-xl font-semibold">Egusi soup</span>
+        <span>See details</span>
+        <span class="text-3xl font-bold" id="tagPrice">$4.99</span>
+      </aside>
+      <div class="flex flex-col justify-center items-center gap-y-5">
+      <aside class="flex flex-row gap-4">
+        <button class="w-10 h-10 bg-[#F24E1E] flex text-center justify-center text-black text-3xl rounded-lg font-bold"
+          id="decreaseBtn2">-</button>
+        <input id="display2" class="text-black text-2xl w-10 h-10 border border-red-400 text-center" value="0" readonly>
+        <button class="w-10 h-10 bg-[#F24E1E] flex text-center justify-center text-black text-3xl rounded-lg font-bold"
+          id="increaseBtn2">+</button>
+      </aside>
+      <button class="buttonCart" id="addToCart">Add to cart</button>
+      </div>
+    </div>
+    <div class="w-100 h-35 bg-white rounded-lg items-center p-2 justify-between flex flex-row">
+      <aside class="w-25 h-27 rounded-lg bg-red-300" id="Egusi"></aside>
+      <aside class="flex flex-col gap-y-2">
+        <span class="text-xl font-semibold">Egusi soup</span>
+        <span>See details</span>
+        <span class="text-3xl font-bold" id="tagPrice">$4.99</span>
+      </aside>
+      <div class="flex flex-col justify-center items-center gap-y-5">
+        <aside class="flex flex-row gap-4">
+          <button
+            class="w-10 h-10 bg-[#F24E1E]  flex text-center justify-center text-black text-3xl rounded-lg font-bold"
+            id="decreaseBtn3">-</button>
+          <input id="display3" class="text-black text-2xl w-10 h-10 border border-red-400 text-center" value="0"
+            readonly>
+          <button
+            class="w-10 h-10 bg-[#F24E1E] flex text-center justify-center text-black text-3xl rounded-lg font-bold"
+            id="increaseBtn3">+</button>
+        </aside>
+        <button class="buttonCart" id="addToCart">Add to cart</button>
+      </div>
+    </div>
+  </aside>
+  <button class="button" id="modalBtn">Submit</button>
+  <div id="simpleModal" class="modal">
+    <div class="modalContent">
+      <span class="closeBtn"> &times;</span>
+      <p>price total is............</p>
+    </div>
   </div>
-  <div class="w-100 h-35 bg-white rounded-lg items-center p-2 justify-between flex flex-row">
-    <aside class="w-25 h-27 rounded-lg bg-red-300"id="Egusi"></aside>
-    <aside class="flex flex-col gap-y-2">
-      <span class="text-xl font-semibold" >Egusi soup</span>
-      <span>See details</span>
-      <span class="text-3xl font-bold" id="tagPrice">$4.99</span>
-    </aside>
-    <aside class="flex flex-row gap-4">
-        <button class="w-10 h-10 bg-red-500 flex text-center justify-center text-black text-3xl rounded-lg font-bold" id="decreaseBtn3">-</button>
-         <input id="display3" class="text-black text-2xl w-10 h-10 border border-red-400 text-center" value="0" readonly>
-        <button  class="w-10 h-10 bg-red-500 flex text-center justify-center text-black text-3xl rounded-lg font-bold" id="increaseBtn3">+</button>
-    </aside>
+  <div id="simpleModalCart" class="modalCartss">
+    <div class="modalCart">
+      <span class="closeCart">&times;</span>
+      <div id="shoppingCart" class="w-20 h-20 rounded-full flex items-center justify-center ">
+        <img src="/asset/img/cart.webp" alt="" class="w-13 h-13">
+      </div>
+      <p class="text-black font-bold text-2xl">ITEM HAS BEEN <br> ADDED TO CART <br> SUCCESSFULLY!</p>
+      <button class="viewCart">VIEW CART</button>
+    </div>
   </div>
-</aside>
 
 
   <!-- Footer  -->
-  <footer class="fixed bottom-0 left-0 w-full lg:w-full bg-white shadow-md border-t flex justify-between p-6 lg:justify-around py-3">
+  <footer
+    class="fixed bottom-0 left-0 w-full lg:w-full bg-white shadow-md border-t flex justify-between p-6 lg:justify-around py-3">
     <!-- Home -->
     <div class="flex flex-col items-center text-green-600">
       <a href="dashboard.html">
@@ -122,13 +159,16 @@
 
     <!-- Cart -->
     <div class="relative flex flex-col items-center text-gray-500">
+      <a href="cart.html" class=" items-center flex-col flex">
       <i class="las la-shopping-cart text-2xl"></i>
       <!-- Notification Badge -->
       <span
         class="absolute -top-1 -right-2 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">1</span>
       <span class="text-base mt-1">Cart</span>
+      </a>
     </div>
   </footer>
+
 
 
   <script src="/asset/js/food.js"></script>

@@ -27,3 +27,129 @@ body{
 #symbolBox{
     background-color: #F24E1E;
 }
+#modalBtn{
+    background-color: #F24E1E;
+    color: white;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+    width: 120px;
+    height: 50px;
+    font-size: x-large;
+    border-radius: 8px;
+    font-weight: 700;
+    position: fixed;
+    bottom: 85px;
+    right: 10px;
+}
+#modalBtn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  background-color: white;
+  color: #F24E1E;
+}
+.modal{
+    display: none;
+    z-index: 1;
+    height: 100%;
+    width:  100%;
+    position:fixed;
+    left: 0;
+    top: 0;
+    background-color:rgba(0,0,0,0.6);
+    overflow: auto;
+}
+.modalContent{
+    background-color: white;
+    margin: 19% auto;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5), 0 7px 20px 0 rgba(0,0,0,0.7);
+}
+.closeBtn{
+    color: rgb(113, 112, 112);
+    float: right;
+    font-size: 20px;
+}
+.closeBtn:hover, .closeBtn:focus{
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+}
+#addToCart{
+    background-color: #F24E1E;
+    color: white;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+    width: 70px;
+    height: 30px;
+    font-size: large;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.modalCart{
+    background-color: white;
+    margin: 19% auto;
+    padding: 20px;
+    width: 20%;
+    border-radius: 8px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5), 0 7px 20px 0 rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+}
+.closeCart{
+    color: black;
+    float: right;
+    font-size: 20px;
+    position: absolute;
+    right: 4px;
+    top: 2px;
+}
+.modalCartss{
+    display: none;
+    z-index: 1;
+    height: 100%;
+    width:  100%;
+    position:fixed;
+    left: 0;
+    top: 0;
+    background-color:rgba(0,0,0,0.6);
+    overflow: auto;
+}
+.closeCart{
+    color: rgb(113, 112, 112);
+    float: right;
+    font-size: 20px;
+}
+.closeCart:hover, .closeCart:focus{
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+}
+#shoppingCart{
+    background-color: #F24E1E;
+}
+.viewCart{
+    width: 120px;
+    height: 50px;
+    background-color: #F24E1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.viewCart:hover,.viewCart:focus{
+    transition: all 1s ease;
+    transform: translate(-7px, -7px);
+}
