@@ -1,3 +1,5 @@
+"use strict"
+
 // Sidebar toggle script
 const menuBtn = document.getElementById('menuBtn');
 const asideDashboard = document.getElementById('asideDashboard');
@@ -19,21 +21,27 @@ document.addEventListener('click', (e) => {
     asideDashboard.classList.add('-translate-x-full');
   }
 });
-const searchBtn = document.getElementById('searchBtn');
-const searchInput = document.getElementById('searchInput');
 
-document.addEventListener('DOMContentLoaded', function() {
-    const reserveAlert = document.getElementById('reservationAlert');
-    reserveAlert.addEventListener('click', function(event){
-        alert("Please be informed the colored table has been occupied. Thank you for your consideration.");
-    });
-});
+
 
 document.addEventListener('DOMContentLoaded', function(){
-  document.getElementById("buttonReserve").addEventListener('click', function(event){
-    window.location.href = "reservationConfirmed.html";
-  })
+ let viewCart = document.getElementsByClassName('viewCart');
+ viewCart.addEventListener('click', function(){
+  window.location.href = "cart.html"
+ })
 })
+
+document.getElementsByTagNameNS
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -22,8 +22,8 @@
       <ul class="sideBar">
         <li class="text-xl cursor-pointer"><a href="dashboard.html" class="hover:text-black hover:bg-gray-300"><i
               class="las la-home text-xl"></i> <span>Home</span></a></li>
-        <li class="text-xl pt-5 cursor-pointer"> <a href="food.html" class="hover:text-black hover:bg-gray-300"><i
-              class="las la-store text-xl"></i> <span>Restaurants</span></a></li>
+        <li class="text-xl pt-5 cursor-pointer"> <a href="tablereservation.html" id="reservationAlert" class="hover:text-black hover:bg-gray-300"><i
+              class="las la-store text-xl"></i> <span>Reservation</span></a></li>
         <li class="text-xl pt-5 cursor-pointer"> <a href="food.html" class="hover:text-black hover:bg-gray-300"><i
               class="las la-hamburger text-xl"></i> <span>Food</span></a></li>
         <li class="text-xl pt-5 cursor-pointer"><a href="food.html" class="hover:text-black hover:bg-gray-300"><i
@@ -35,7 +35,7 @@
       <ul class="sideBar">
         <li class="text-xl pt-5 cursor-pointer"><a href="food.html" class="hover:text-black hover:bg-gray-300"><i
               class="las la-bell text-xl"></i> <span>Notifications</span></a></li>
-        <li class="text-xl pt-5 cursor-pointer"><a href="food.html" class="hover:text-black hover:bg-gray-300"><i
+        <li class="text-xl pt-5 cursor-pointer"><a href="settings.html" class="hover:text-black hover:bg-gray-300"><i
               class="las la-cog text-xl"></i> <span>Settings</span></a></li>
         <li class="text-xl pt-5 cursor-pointer"><a href="food.html" class="hover:text-black hover:bg-gray-300"><i
               class="las la-sign-out-alt text-xl"></i> <span>Logout</span></a></li>
@@ -58,38 +58,97 @@
     <aside class="w-45 h-20 bg-red-300 rounded-full flex justify-center items-center text-2xl font-semibold text-white" id="mainRoom">Main Room</aside>
     <p class="font-semibold text-2xl">Open space</p>
   </div>
-  <div class="grid grid-cols-3 gap-6 mt-7 border border-blue-400 p-5">
-    <aside class="w-40 h-64 bg-red-500 flex justify-center flex-row p-1 pl-2 ">
-        <div class="w-20 h-48 bg-gray-200 rounded-3xl text-2xl flex items-center justify-center ">1</div>
-        <div class="w-20 h-50 rounded-2xl flex justify-center items-center  flex-col gap-y-2">
-            <aside class="w-14 h-22 bg-gray-200 rounded-2xl"></aside>
-            <aside class="w-14 h-22 bg-gray-200 rounded-2xl"></aside>
+  <div class="flex justify-between flex-col mt-7 border border-blue-400 gap-x-5 p-1 lg:p-5 items-center">
+    <nav class="flex flex-row">
+    <aside class=" w-30 h-48 flex-1 lg:w-60 lg:h-64  flex justify-center flex-row p-1 pl-2 pt-3 gap-2 items-center">
+        <div class="w-10 h-30 lg:w-20 lg:h-48 mt-1 bg-gray-200 rounded-lg lg:rounded-3xl text-2xl flex items-center justify-center ">1</div>
+        <div class="w-10 h-30 lg:w-20 lg:h-50  rounded-2xl flex justify-center items-center  flex-col gap-y-2">
+            <aside class="w-8 h-10 lg:w-14 lg:h-22 bg-gray-200 rounded-lg lg:rounded-2xl"></aside>
+            <aside class="w-8 h-10 lg:w-14 lg:h-22 bg-gray-200 rounded-lg lg:rounded-2xl"></aside>
         </div>
     </aside>
-    <aside class="w-80 h-64 bg-red-500 flex justify-center items-center flex-col gap-x-3 gap-y-3 pl-2 p-1 ">
-      <div class="flex flex-row gap-x-3">
-        <aside class="w-19 h-14 bg-gray-200 rounded-2xl"></aside>
-        <aside class="w-19 h-14 bg-gray-200 rounded-2xl"></aside>
-        <aside class="w-19 h-14 bg-gray-200 rounded-2xl"></aside>
+   <aside class=" w-30 h-48 lg:h-64 flex-1 lg:w-60   flex justify-center items-center flex-col gap-x-3 gap-y-3 pl-2 p-1 ">
+        <div class="flex flex-row gap-x-1 lg:gap-x-3">
+        <aside class="w-7 h-5 lg:h-10 lg:w-12 bg-gray-200 rounded-2xl"></aside>
+        <aside class="w-7 h-5 lg:h-10 lg:w-12 bg-gray-200 rounded-2xl"></aside>
+        <aside class="w-7 h-5 lg:h-10 lg:w-12 bg-gray-200 rounded-2xl"></aside>
       </div>
-      <nav class="w-70 h-20 bg-gray-200 rounded-2xl"></nav>
-       <div class="flex flex-row gap-x-3">
-        <aside class="w-19 h-14 bg-gray-200 rounded-2xl"></aside>
-        <aside class="w-19 h-14 bg-gray-200 rounded-2xl"></aside>
-        <aside class="w-19 h-14 bg-gray-200 rounded-2xl"></aside>
+      <nav class="w-25 h-10 lg:h-18 lg:w-40 bg-gray-200 rounded-2xl"></nav>
+        <div class="flex flex-row gap-x-1 lg:gap-x-3">
+        <aside class="w-7 h-5 lg:h-10 lg:w-12 bg-gray-200 rounded-2xl"></aside>
+        <aside class="w-7 h-5 lg:h-10 lg:w-12 bg-gray-200 rounded-2xl"></aside>
+        <aside class="w-7 h-5 lg:h-10 lg:w-12 bg-gray-200 rounded-2xl"></aside>
       </div>
-    </aside>
-      <aside class="w-40 h-64 bg-red-500 flex justify-center flex-row p-1 pl-2 ">
-         <div class="w-20 h-50 rounded-2xl flex justify-center items-center  flex-col gap-y-2">
-            <aside class="w-14 h-22 bg-gray-200 rounded-2xl"></aside>
-            <aside class="w-14 h-22 bg-gray-200 rounded-2xl"></aside>
+    </aside> 
+    <aside class=" w-30 h-48 flex-1 lg:w-60 lg:h-64  flex justify-center flex-row p-1 pl-2 pt-3 gap-2 items-center">
+        <div class="w-10 h-30 lg:w-20 lg:h-50  rounded-2xl flex justify-center items-center  flex-col gap-y-2">
+            <aside class="w-8 h-10 lg:w-14 lg:h-22 bg-gray-200 rounded-lg lg:rounded-2xl"></aside>
+            <aside class="w-8 h-10 lg:w-14 lg:h-22 bg-gray-200 rounded-lg lg:rounded-2xl"></aside>
         </div>
-        <div class="w-20 h-48 bg-gray-200 rounded-3xl text-2xl flex items-center justify-center ">1</div>
-       
+         <div class="w-10 h-30 lg:w-20 lg:h-48 mt-1 bg-gray-200 rounded-lg lg:rounded-3xl text-2xl flex items-center justify-center ">1</div>
     </aside>
- 
-   
+    </nav>
+    <nav class="flex flex-row">
+    <aside class=" w-30 h-48 flex-1 lg:w-60 lg:h-64  flex justify-center flex-row p-1 pl-2 pt-3 gap-2 items-center">
+        <div class="w-10 h-30 lg:w-20 lg:h-48 mt-1 bg-gray-200 rounded-lg lg:rounded-3xl text-2xl flex items-center justify-center ">1</div>
+        <div class="w-10 h-30 lg:w-20 lg:h-50  rounded-2xl flex justify-center items-center  flex-col gap-y-2">
+            <aside class="w-8 h-10 lg:w-14 lg:h-22 bg-gray-200 rounded-lg lg:rounded-2xl"></aside>
+            <aside class="w-8 h-10 lg:w-14 lg:h-22 bg-gray-200 rounded-lg lg:rounded-2xl"></aside>
+        </div>
+    </aside>
+   <aside class=" w-30 h-48 lg:h-64 flex-1 lg:w-60   flex justify-center items-center flex-col gap-x-3 gap-y-3 pl-2 p-1 ">
+        <div class="flex flex-row gap-x-1 lg:gap-x-3">
+        <aside class="w-7 h-5 lg:h-10 lg:w-12 bg-gray-200 rounded-2xl"></aside>
+        <aside class="w-7 h-5 lg:h-10 lg:w-12 bg-gray-200 rounded-2xl"></aside>
+        <aside class="w-7 h-5 lg:h-10 lg:w-12 bg-gray-200 rounded-2xl"></aside>
+      </div>
+      <nav class="w-25 h-10 lg:h-18 lg:w-40 bg-gray-200 rounded-2xl"></nav>
+        <div class="flex flex-row gap-x-1 lg:gap-x-3">
+        <aside class="w-7 h-5 lg:h-10 lg:w-12 bg-gray-200 rounded-2xl"></aside>
+        <aside class="w-7 h-5 lg:h-10 lg:w-12 bg-gray-200 rounded-2xl"></aside>
+        <aside class="w-7 h-5 lg:h-10 lg:w-12 bg-gray-200 rounded-2xl"></aside>
+      </div>
+    </aside> 
+    <aside class=" w-30 h-48 flex-1 lg:w-60 lg:h-64  flex justify-center flex-row p-1 pl-2 pt-3 gap-2 items-center">
+        <div class="w-10 h-30 lg:w-20 lg:h-50  rounded-2xl flex justify-center items-center  flex-col gap-y-2">
+            <aside class="w-8 h-10 lg:w-14 lg:h-22 bg-gray-200 rounded-lg lg:rounded-2xl"></aside>
+            <aside class="w-8 h-10 lg:w-14 lg:h-22 bg-gray-200 rounded-lg lg:rounded-2xl"></aside>
+        </div>
+         <div class="w-10 h-30 lg:w-20 lg:h-48 mt-1 bg-gray-200 rounded-lg lg:rounded-3xl text-2xl flex items-center justify-center ">1</div>
+    </aside>
+    </nav>
+    <nav class="flex flex-row">
+    <aside class=" w-30 h-48 flex-1 lg:w-60 lg:h-64  flex justify-center flex-row p-1 pl-2 pt-3 gap-2 items-center">
+        <div class="w-10 h-30 lg:w-20 lg:h-48 mt-1 bg-gray-200 rounded-lg lg:rounded-3xl text-2xl flex items-center justify-center ">1</div>
+        <div class="w-10 h-30 lg:w-20 lg:h-50  rounded-2xl flex justify-center items-center  flex-col gap-y-2">
+            <aside class="w-8 h-10 lg:w-14 lg:h-22 bg-gray-200 rounded-lg lg:rounded-2xl"></aside>
+            <aside class="w-8 h-10 lg:w-14 lg:h-22 bg-gray-200 rounded-lg lg:rounded-2xl"></aside>
+        </div>
+    </aside>
+   <aside class=" w-30 h-48 lg:h-64 flex-1 lg:w-60   flex justify-center items-center flex-col gap-x-3 gap-y-3 pl-2 p-1  " id="coloredSeat">
+        <div class="flex flex-row gap-x-1 lg:gap-x-3">
+        <aside class="w-7 h-5 lg:h-10 lg:w-12 bg-gray-200 rounded-2xl"></aside>
+        <aside class="w-7 h-5 lg:h-10 lg:w-12 bg-gray-200 rounded-2xl"></aside>
+        <aside class="w-7 h-5 lg:h-10 lg:w-12 bg-gray-200 rounded-2xl"></aside>
+      </div>
+      <nav class="w-25 h-10 lg:h-18 lg:w-40  rounded-2xl" ></nav>
+        <div class="flex flex-row gap-x-1 lg:gap-x-3">
+        <aside class="w-7 h-5 lg:h-10 lg:w-12 bg-gray-200 rounded-2xl"></aside>
+        <aside class="w-7 h-5 lg:h-10 lg:w-12 bg-gray-200 rounded-2xl"></aside>
+        <aside class="w-7 h-5 lg:h-10 lg:w-12 bg-gray-200 rounded-2xl"></aside>
+      </div>
+    </aside> 
+    <aside class=" w-30 h-48 flex-1 lg:w-60 lg:h-64  flex justify-center flex-row p-1 pl-2 pt-3 gap-2 items-center">
+        <div class="w-10 h-30 lg:w-20 lg:h-50  rounded-2xl flex justify-center items-center  flex-col gap-y-2">
+            <aside class="w-8 h-10 lg:w-14 lg:h-22 bg-gray-200 rounded-lg lg:rounded-2xl"></aside>
+            <aside class="w-8 h-10 lg:w-14 lg:h-22 bg-gray-200 rounded-lg lg:rounded-2xl"></aside>
+        </div>
+         <div class="w-10 h-30 lg:w-20 lg:h-48 mt-1 bg-gray-200 rounded-lg lg:rounded-3xl text-2xl flex items-center justify-center ">1</div>
+    </aside>
+    </nav>
   </div>
+  <button class="w-60 h-20 font-bold text-2xl mt-4 mb-26 rounded-3xl cursor-pointer" id="buttonReserve">Reserve the table</button>
+    
 
   <!-- Footer  -->
   <footer class="fixed bottom-0 left-0 w-full lg:w-full bg-white shadow-md border-t flex justify-between p-6 lg:justify-around py-3">
@@ -122,7 +181,7 @@
   </footer>
 
 
-  <script src="/asset/js/food.js"></script>
+  <script src="/asset/js/tablereservation.js"></script>
 </body>
 
 </html>
