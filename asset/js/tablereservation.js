@@ -34,6 +34,12 @@ document.addEventListener('DOMContentLoaded', function(){
     window.location.href = "reservationConfirmed.html";
   })
 })
+document.addEventListener('DOMContentLoaded', function(){
+  document.getElementById("settingBtn").addEventListener('click', function(event){
+    window.location.href = "settings.html";
+  })
+})
+
 
 
 

@@ -19,6 +19,21 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+#Jollof{
+    background-image: url(/asset/img/Jollof-rice.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Ogbono{
+    background-image: url(/asset/img/ogbono.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#friedRice{
+    background-image: url(/asset/img/rice1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 #tagPrice{
@@ -101,6 +116,8 @@ body{
     flex-direction: column;
     text-align: center;
     gap: 12px;
+ 
+    overflow-y: auto;
 }
 .closeCart{
     color: black;
@@ -119,7 +136,7 @@ body{
     left: 0;
     top: 0;
     background-color:rgba(0,0,0,0.6);
-    overflow: auto;
+  
 }
 .closeCart{
     color: rgb(113, 112, 112);
@@ -153,3 +170,7 @@ body{
     transition: all 1s ease;
     transform: translate(-7px, -7px);
 }
+
+   
+
+

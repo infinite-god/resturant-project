@@ -39,11 +39,23 @@ function setupCounter(decreaseId, increaseId, displayId){
 }
 // card 1
 setupCounter("decreaseBtn", "increaseBtn", "display");
-
 // card 2
 setupCounter("decreaseBtn2", "increaseBtn2", "display2");
 // card 3
 setupCounter("decreaseBtn3", "increaseBtn3", "display3");
+// card 4
+setupCounter("decreaseBtn4", "increaseBtn4", "display4");
+// card 5
+setupCounter("decreaseBtn5", "increaseBtn5", "display5");
+// card 6
+setupCounter("decreaseBtn6", "increaseBtn6", "display6");
+// card 7
+setupCounter("decreaseBtn7", "increaseBtn7", "display7");
+// card 8
+setupCounter("decreaseBtn8", "increaseBtn8", "display8");
+// card 9
+setupCounter("decreaseBtn9", "increaseBtn9", "display9");
+
 
 document.addEventListener('DOMContentLoaded', function(){
   let modal = document.getElementById('simpleModal');
@@ -64,10 +76,12 @@ window.addEventListener('click', function(e){
 // add to cart modal//
 document.addEventListener('DOMContentLoaded', function(){
   let modalCartss = document.getElementById('simpleModalCart');
-  let addTocart = document.getElementById('addToCart');
+  let buttonCart = document.querySelectorAll('.buttonCart');
   let closeCart = document.getElementsByClassName('closeCart')[0];
-  addTocart.addEventListener('click', function(){
-    modalCartss.style.display = 'block';
+  buttonCart.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      modalCartss.style.display = 'block';
+    })
   });
   closeCart.addEventListener('click', function(){
     modalCartss.style.display = 'none';
@@ -86,7 +100,25 @@ document.addEventListener('DOMContentLoaded', function(){
  })
 })
 
-document.getElementsByTagNameNS
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+});
+
 
 
 
