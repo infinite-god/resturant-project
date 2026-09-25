@@ -3,7 +3,6 @@
 // Sidebar toggle script
 const menuBtn = document.getElementById('menuBtn');
 const asideDashboard = document.getElementById('asideDashboard');
-
 // Toggle sidebar when menu button is clicked
 menuBtn.addEventListener('click', (e) => {
   e.stopPropagation(); // Prevent the click from bubbling to the document

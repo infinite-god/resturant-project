@@ -59,11 +59,14 @@ setupCounter("decreaseBtn9", "increaseBtn9", "display9");
 
 document.addEventListener('DOMContentLoaded', function(){
   let modal = document.getElementById('simpleModal');
-let modalBtn = document.getElementById ('modalBtn');
+let modalBtn = document.querySelectorAll('modalBtn');
 let closeBtn = document.getElementsByClassName ('closeBtn')[0];
-modalBtn.addEventListener('click', function(){
-  modal.style.display = 'block';
-});
+modalBtn. forEach(function(btn){
+  btn1.addEventListener('click', function(){
+    modal.style.display = 'block';
+  })  
+})
+
 closeBtn.addEventListener('click', function(){
   modal.style.display = 'none';
 });
@@ -100,25 +103,15 @@ document.addEventListener('DOMContentLoaded', function(){
  })
 })
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-
-});
-
+  var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        
+      },
+    });
 
 
 
